@@ -1,0 +1,12 @@
+{
+  "resourceName": "project",
+  "tableName": "projects",
+  "partitionKey": {
+    "fieldName": "project_id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": [
+    "projectsLambdaFnc"
+  ]
+}
