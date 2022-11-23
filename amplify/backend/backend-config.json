@@ -1,5 +1,24 @@
 {
   "function": {
+    "sensorLambdaFnc": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "sensorData",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ]
+    },
     "userLambdaFnc": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -47,13 +66,25 @@
     "projects": {
       "service": "DynamoDB",
       "providerPlugin": "awscloudformation"
+    },
+    "sensorData": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
     }
   },
   "api": {
-    "dashboardApis": {
+    "dashboardapi": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "sensorLambdaFnc",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
         {
           "category": "function",
           "resourceName": "userLambdaFnc",

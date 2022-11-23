@@ -9,30 +9,36 @@
       "UnauthRoleName": "amplify-sensordashboardproje-dev-104828-unauthRole",
       "StackName": "amplify-sensordashboardproje-dev-104828",
       "StackId": "arn:aws:cloudformation:us-east-1:902331659163:stack/amplify-sensordashboardproje-dev-104828/66d03830-5a0d-11ed-aeaa-0a4580dc23a9",
-      "AmplifyAppId": "du3blwm6ofmaq"
+      "AmplifyAppId": "du3blwm6ofmaq",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-sensordashboardproje-dev-104828-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "function": {
-        "userLambdaFnc": {
-          "deploymentBucketName": "amplify-sensordashboardproje-dev-104828-deployment",
-          "s3Key": "amplify-builds/userLambdaFnc-57774468507045583332-build.zip"
-        },
         "project": {},
         "user": {},
+        "sensorLambdaFnc": {
+          "deploymentBucketName": "amplify-sensordashboardproje-dev-104828-deployment",
+          "s3Key": "amplify-builds/sensorLambdaFnc-3563384b695a797a3558-build.zip"
+        },
+        "userLambdaFnc": {
+          "deploymentBucketName": "amplify-sensordashboardproje-dev-104828-deployment",
+          "s3Key": "amplify-builds/userLambdaFnc-426f2f71517542306847-build.zip"
+        },
         "projectsLambdaFnc": {
           "deploymentBucketName": "amplify-sensordashboardproje-dev-104828-deployment",
-          "s3Key": "amplify-builds/projectsLambdaFnc-6a7279544d4a78506239-build.zip"
+          "s3Key": "amplify-builds/projectsLambdaFnc-55487548716e62387178-build.zip"
         }
       },
       "storage": {
         "user": {},
-        "projects": {}
+        "projects": {},
+        "sensorData": {}
       },
       "auth": {
         "sensordashboardproje": {}
       },
       "api": {
-        "dashboardApis": {}
+        "dashboardapi": {}
       }
     }
   }

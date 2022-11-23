@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "Lambda Function resource stack creation using Amplify CLI",
+  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"10.5.1\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
   "Parameters": {
     "CloudWatchRule": {
       "Type": "String",
@@ -16,13 +16,13 @@
     "s3Key": {
       "Type": "String"
     },
-    "storageuserName": {
+    "storagesensorDataName": {
       "Type": "String",
-      "Default": "storageuserName"
+      "Default": "storagesensorDataName"
     },
-    "storageuserArn": {
+    "storagesensorDataArn": {
       "Type": "String",
-      "Default": "storageuserArn"
+      "Default": "storagesensorDataArn"
     }
   },
   "Conditions": {
@@ -55,12 +55,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "userLambdaFnc",
+            "sensorLambdaFnc",
             {
               "Fn::Join": [
                 "",
                 [
-                  "userLambdaFnc",
+                  "sensorLambdaFnc",
                   "-",
                   {
                     "Ref": "env"
@@ -97,12 +97,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "sensordashboardprojeLambdaRolefc8610da",
+            "sensordashboardprojeLambdaRoled8e372ea",
             {
               "Fn::Join": [
                 "",
                 [
-                  "sensordashboardprojeLambdaRolefc8610da",
+                  "sensordashboardprojeLambdaRoled8e372ea",
                   "-",
                   {
                     "Ref": "env"
@@ -182,14 +182,14 @@
               ],
               "Resource": [
                 {
-                  "Ref": "storageuserArn"
+                  "Ref": "storagesensorDataArn"
                 },
                 {
                   "Fn::Join": [
                     "/",
                     [
                       {
-                        "Ref": "storageuserArn"
+                        "Ref": "storagesensorDataArn"
                       },
                       "index/*"
                     ]
