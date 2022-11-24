@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { getSensorData } from './services/sensorData.service';
 
-function App() {
+
+async function getData(time)
+{
+  let data = await getSensorData(time);
+  return data;
+}
+async function App() {
+  getData(1);
+
   return (
     <div className="App">
       <header className="App-header">
