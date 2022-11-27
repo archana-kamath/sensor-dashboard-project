@@ -18,7 +18,7 @@
         "user": {},
         "sensorLambdaFnc": {
           "deploymentBucketName": "amplify-sensordashboardproje-dev-104828-deployment",
-          "s3Key": "amplify-builds/sensorLambdaFnc-3563384b695a797a3558-build.zip"
+          "s3Key": "amplify-builds/sensorLambdaFnc-705747682f786376586a-build.zip"
         },
         "userLambdaFnc": {
           "deploymentBucketName": "amplify-sensordashboardproje-dev-104828-deployment",

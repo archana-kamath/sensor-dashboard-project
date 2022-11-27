@@ -12,3 +12,16 @@ export async function getSensorData(time) {
   console.log(data);
   return data;
 }
+
+export async function fetchAllSensorData() {
+  let data = await API.get('dashboardapi', '/sensorData/all', {
+  }).then(resp => {
+    console.log(resp);
+    return resp;
+  }).catch(err => {
+    console.log('Errrorr');
+    console.log(err);
+  });
+  console.log(data);
+  return data;
+}
