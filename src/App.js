@@ -1,34 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { getSensorData,fetchAllSensorData} from './services/sensorData.service';
+import Dashboard from './components/Dashboard';
+import Authenticate from './components/Home';
+import './components/dashboard.css';
+import { Amplify, Auth } from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import awsconfig from './aws-exports';
+import '@aws-amplify/ui-react/styles.css';
 
 
-async function getData()
-{
-  let data = await fetchAllSensorData();
-  return data;
-}
- function App() {
-  getData();
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
+// Auth.currentCredentials().then(creds => console.log(creds));
+
+
+function App({user}) {
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <h1 className='title'>Hello {user.username} </h1> 
+        </div>
       </header>
+      <div>
+        <div>
+          <Dashboard/>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
+
