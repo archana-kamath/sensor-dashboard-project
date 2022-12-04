@@ -16,12 +16,13 @@ export async function getSensorData(time) {
 export async function fetchAllSensorData() {
   let data = await API.get('dashboardapi', '/sensorData/all', {
   }).then(resp => {
-    console.log(resp);
+    resp = resp.sort(function (a, b) {
+      return new Date(a.time) - new Date(b.time);
+    });
     return resp;
   }).catch(err => {
     console.log('Errrorr');
     console.log(err);
   });
-  console.log(data);
   return data;
 }
