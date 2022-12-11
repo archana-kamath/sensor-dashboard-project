@@ -9,8 +9,7 @@
       "UnauthRoleName": "amplify-sensordashboardproje-dev-104828-unauthRole",
       "StackName": "amplify-sensordashboardproje-dev-104828",
       "StackId": "arn:aws:cloudformation:us-east-1:902331659163:stack/amplify-sensordashboardproje-dev-104828/66d03830-5a0d-11ed-aeaa-0a4580dc23a9",
-      "AmplifyAppId": "du3blwm6ofmaq",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-sensordashboardproje-dev-104828-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "AmplifyAppId": "du3blwm6ofmaq"
     },
     "categories": {
       "function": {
