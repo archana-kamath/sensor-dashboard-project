@@ -68,9 +68,9 @@ Climate change and farmers' limited technological knowledge makes it necessary t
 
 
 
-### Video Recording 
+## Video Recording:
 
-[video link](https://drive.google.com/drive/folders/1bPJauil4gRWCjdYDO75yfp-Zrq61GjVJ)
+[video link](https://drive.google.com/file/d/1HVUK9V9qgagwNnfLe-iUzGoAVk8GV7YW/view?usp=share_link)
 
 
 Please click on the above link to watch the working demo of the entire application and also learn more about the project implementation.
