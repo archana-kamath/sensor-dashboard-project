@@ -2,7 +2,7 @@
 IoT Based Moisture Alerting System for Indoor Plants
 
 * University Name: [San Jose State University](http://www.sjsu.edu/)
-* Course: [Cloud Technologies](https://catalog.sjsu.edu/preview_course_nopop.php?catoid=12&coid=58423)
+* Course: [Data Mining](https://catalog.sjsu.edu/preview_course_nopop.php?catoid=12&coid=58423)
 * Professor: [Kaikai Liu](https://cmpe.sjsu.edu/profile/kaikai-liu)
 * Students: [Archana Miyar Kamath](https://www.linkedin.com/in/archana-kamath-018/), [Aakanksha Gupta](https://www.linkedin.com/in/aakanksha-gupta-739ab993?originalSubdomain=in), [Mounica Kamireddy](https://www.linkedin.com/in/mounica-kamireddy/), [Limeka Dabre](https://www.linkedin.com/in/limekadabre/)
 
