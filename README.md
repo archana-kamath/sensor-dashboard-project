@@ -1,5 +1,5 @@
 # CMPE 255: Sensor-dashboard-project
-IoT Based Smart Moisture Monitoring System
+IoT Based Moisture Alerting System for Indoor Plants
 
 * University Name: [San Jose State University](http://www.sjsu.edu/)
 * Course: [Cloud Technologies](https://catalog.sjsu.edu/preview_course_nopop.php?catoid=12&coid=58423)
@@ -37,58 +37,36 @@ Climate change and farmers' limited technological knowledge makes it necessary t
 
 * CloudFormation:  CloudFormation helped us in creating a template of all the resources and its properties generated via Amplify. 
 
-* Amazon Dynamo DB: A NoSQL DB used to store user details and corresponding image uploads. 
+* AWS IoT: AWS IoT Core is a managed cloud service that lets connected devices easily and securely interact with cloud applications and other devices.
 
-* Lambda: A lambda function which gets triggered once user uploads images to S3 bucket and sends emails to application owner. 
+* Amazon Dynamo DB: A NoSQL DB used to store IoT sensor data coming from AWS IoT. 
 
-* SNS: A notification service which helps application owner to monitor and track users activity.
+* Lambda: A lambda function which gets triggered once set thresholds of temperature, humidity and moisture are dropped. An emails is sent to user. 
+
+* SNS: A notification service which helps user to monitor and respond immediately if plant needs attention.
 
 * Cloud Watch: A monitoring service to keep track of the health and utilization of resources.
 
-* Sage Maker: A service used to build, train and deploy ML models. This application can be further enhanced to help users in recommending hotels based on location and                       customer reviews.
-
-* Code Pipeline: A CI/CD service which enables continuous integration and delivery when ever a code commit occurs in github and gets uploaded to S3. An updated deployed version is delivered to Elastic bean stalk application.
-
+* Sage Maker: A service used to build, train and deploy ML models. This application can be further enhanced to help users in identifying trends of plant health based on set thresholds.
 
 ## Application Screenshots:
 
-* AWS Login/Signup:
+* Login:
 
-<img width="1337" alt="web aws login" src="https://user-images.githubusercontent.com/27188674/143164299-0d6320a0-ba1c-4346-aed9-8beaf8b04f4f.png">
+![login](https://user-images.githubusercontent.com/27188674/207077158-f888e81b-fe24-4afd-8262-86ffa38117e0.png)
 
-* Google Login:
+* SignUp:
 
-![image](https://user-images.githubusercontent.com/27188674/143182922-d594a854-bf4a-4529-8ef1-aeab3dde8bf9.png)
+![SignUp](https://user-images.githubusercontent.com/27188674/207077472-48ede52f-8296-4d0e-9024-9e6808fed7c9.png)
 
-* Facebook Login:
+* Dashboard:
 
-![FbLogin](https://user-images.githubusercontent.com/27188674/143182941-624eefd9-66f1-4351-ac91-1abd757730ef.PNG)
+![Dashboard1](https://user-images.githubusercontent.com/27188674/207078979-20405f84-c579-46b0-a8b1-266f2a676585.png)
 
-* Weather Page:
+![Dashboard2](https://user-images.githubusercontent.com/27188674/207078919-228b30b1-fe23-461a-8d61-cc7391cff584.png)
 
-<img width="1281" alt="weather" src="https://user-images.githubusercontent.com/27188674/143172280-7a641670-87b0-4916-9c7f-6abceb8f0d7b.png">
 
-* Upload Image Page:
 
-<img width="1337" alt="Upload picture" src="https://user-images.githubusercontent.com/27188674/143172340-16657c06-0792-4f31-a9a9-4bd35097e088.png">
-
-* FB Sharing:
-
-![FbShare](https://user-images.githubusercontent.com/27188674/143172957-25e792ca-4684-473d-8e9e-d5467487f1dd.PNG)
-
-* Search Image Page:
-
-<img width="1424" alt="search picture" src="https://user-images.githubusercontent.com/27188674/143172533-df848c20-3e7b-4155-b534-c3317959d127.png">
-
-* Chat Bot:
-
-<img width="1440" alt="chat-voice" src="https://user-images.githubusercontent.com/27188674/143172762-e6abc7e9-2dd2-404c-aa8d-9260c1bf823d.png">
-
-<img width="1316" alt="Chatbot" src="https://user-images.githubusercontent.com/27188674/143172809-72473e81-6d0e-43d9-82c3-a26347ea22a0.png">
-
-* Hotel Recommendations:
-
-![Hotel recommendations](https://user-images.githubusercontent.com/27188674/143172863-1401182b-f7b6-4486-8ec5-831be70f0567.PNG)
 
 
 
