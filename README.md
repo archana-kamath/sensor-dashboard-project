@@ -66,7 +66,8 @@ Climate change and farmers' limited technological knowledge makes it necessary t
 ![Dashboard2](https://user-images.githubusercontent.com/27188674/207078919-228b30b1-fe23-461a-8d61-cc7391cff584.png)
 
 
-
+![Demo Video of the Application](https://drive.google.com/drive/folders/1bPJauil4gRWCjdYDO75yfp-Zrq61GjVJ
+)
 
 
 
